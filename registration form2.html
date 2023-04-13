@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><title>REGISTRATION PAGE</title></head>
+<body style="background-image:linear-gradient(#FFF, #FFF000, #000000);">
+<fieldset>
+<legend style="text-align:center;">Registration form</legend>
+<marquee style="background-color:blue; width:100px; height20px; align:center;">Register here</marquee>
+<form action="/action_page.php">
+<label for="fname">First Name:</label>
+<input type="text" id="fname"><br>
+<label for="lname">Last  Name: </label>
+<input type="text" id="lname"><br>
+
+<label for="gender">Gender</label><br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="others" name="gender" value="others">
+<label for="others">Others</label><br>
+
+
+<label for="event">Events</label><br>
+<input type="checkbox" id="quiz" name="event" value="quiz">
+<label for="quiz">Quiz</label><br>
+<input type="checkbox" id="carrom" name="event" value="carrom">
+<label for="carrom">Carrom</label><br>
+<input type="checkbox" id="debate" name="event" value="debate">
+<label for="debate">Debate</label><br>
+<input type="checkbox" id="cryptex" name="event" value="cryptex">
+<label for="cryptex">Cryptex</label><br>
+
+<label>Select your campus</label><br>
+<label for="campus">Campus list:</label><br>
+<select id="campus" name="campus">
+<option value="IIIT NUZVIDU">IIIT NUZVID</option>
+<option value="IIIT RK-VALLEY">IIIT RK VALLEY</option>
+<option value="IIIT SRIKAKULAM">IIIT SRIKAKULAM</option>
+<option value="IIIT ONGOLE">IIIT ONGOLE</option>
+</select><br>
+
+<label>suggestions:</label><br>
+<textarea name="comment" style="width:200px; height:200px;">write your comment</textarea><br>
+<label>Suggestion:</label><br>
+<textarea name="comment" rows="5" cols="20">put your comment</textarea><br>
+
+<button type="button" onclick="alert(submitted)">Submit</button>
+
+</fieldset>
+</body>
+</html>

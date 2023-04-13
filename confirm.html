@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JAVASCRIPT CONFIRM BOX</h2>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+var txt;
+if(confirm("press a button")){
+txt="You pressed OK!";
+}
+else{
+txt="You pressed Cancel!";
+}
+document.getElementById("demo").innerHTML=txt;
+}
+let text;
+let person = prompt("Please Enter your name:", "Harry Potter");
+if(person==null || person==" "){
+text="User cancelled the Prompt";
+}
+else{
+text="Hello "+person+"! How are you?";
+}
+document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+</html>

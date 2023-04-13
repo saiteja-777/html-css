@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS fonts</title>
+    <style type="text/css">
+        a{
+            text-decoration:none;
+        }
+        a:link{color:red;}
+        a:visited{color:blue;}
+        a:hover{color:pink; text-decoration: underline;}
+        a:active{color:black;}
+
+        #mydiv{
+            width:150px;
+            height:150px;
+            background-color:red;
+            position: relative;
+            animation-name:example;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count:3;
+            animation-direction: normal;
+        }
+        @keyframes example{
+            0%{background-color:red; left: 0px; top: 0px;}
+            25%{background-color: yellow; left: 200px; top: 0px;}
+            50%{background-color: blue; left: 200px; top:200px;}
+            75%{background-color: green; left: 0px; top: 200px;}
+            100%{background-color: red; left: 0px; top: 0px;}
+        }
+    </style>
+
+</head>
+
+<body>
+    <p style="font-family: 'Courier New', Courier, monospace;">Hello world</p>
+    <p style="font-style: italic;">This is italic</p>
+    <p style="font: italic small-caps bold 15px georgia;">This is the shorted way to style</p>
+    <p style="text-indent:2cm;">Paragraph with text indent with 2cm</p>
+    <p style="text-shadow:4px 4px blue;">Text with shadow.</p>
+    <p style="text-shadow:5px 10px 4px green;">Text with shadow.</p>
+    <a href="https://www.google.com">Click here to be happy</a>
+    
+    <div style="background-color:green; width:300px; height:100px; position:absolute; top:300px; left:120px; z-index:1;"></div>
+    <div style="background-color:red; width:300px; height:100px; position:absolute; top:340px; left:80px; z-index:2;"></div>
+    <div style="background-color:yellow; width:300px; height:100px; position:absolute; top:380px; left:40px; z-index:3;"></div>
+
+    <ul>
+        <li style="list-style-type:square; float:left; width:10%;">Hello</li>
+    </ul>
+    <ol>
+        <li style="list-style-type:lower-greek; float:right; width:10%;">Hello</li>
+    </ol>
+
+    <div id="mydiv"></div>
+</body>
+
+</html>
